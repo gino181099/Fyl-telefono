@@ -10,16 +10,34 @@ body{
 }
 .container {
     width: 500px;  height:1100px;  overflow:hidden;
-    transform: scale(0.5);
+    transform: scale(0.5) translateY(-25vh);
     margin: auto;
     z-index: 10;
 }
+.animaciones{
+    height: 100vh;}
 .animacion{
-    height: 200vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 
     /* border: 1px solid red; */
+}
+#dos{
+    transform: translateY(-100vh);
+    opacity: 0;
+}
+.tres{
+    transform: translateY(-200vh);
+    opacity: 0;
+}
+.cuatro{
+    transform: translateY(-300vh);
+    opacity: 0;
+}
+.cinco{
+    transform: translateY(-400vh);
+    opacity: 0;
 }
 @media (max-width: 945px){
     .animacion{
