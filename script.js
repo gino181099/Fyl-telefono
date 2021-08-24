@@ -59,7 +59,7 @@ const tl = gsap.timeline({
       markers: true,
       pinSpacing: false
     }
-  }).to(".text-one",{opacity:1, duration: 1}).to(".text-one",{opacity:0})
+  }).to(".text-one",{opacity:1}).to(".text-one",{opacity:0})
     .to(".text-two",{opacity:1}).to(".text-two",{opacity:0})
     .to(".text-three",{opacity:1}).to(".text-three",{opacity:0})
     .to(".text-four",{opacity:1}).to(".text-four",{opacity:0})
