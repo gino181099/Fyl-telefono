@@ -3,13 +3,15 @@ gsap.registerPlugin("ScrollTrigger");
 
 
 // method 2 ( img/div tag x position ) :
-var M2 = TweenMax.to('.character2',1,{repeat:0,x:-24995,ease:SteppedEase.config(49), paused: true});
+// var M2 = TweenMax.to('.character2',1,{repeat:0,x:-24995,ease:SteppedEase.config(49), paused: true});
 
 // var M3 = TweenMax.to('.character3',1,{repeat:0,x:-7500,ease:SteppedEase.config(15), paused: true});
 var M4 = TweenMax.to('.character4',10,{repeat:-1,x:-64000,ease:SteppedEase.config(128), paused: true});
 var M5 = TweenMax.to('.character5',8,{repeat:0,x:-51000,ease:SteppedEase.config(102), paused: true});
 var M6 = TweenMax.to('.character6',7,{repeat:0,x:-60000,ease:SteppedEase.config(120), paused: true});
 var M7 = TweenMax.to('.character7',1,{repeat:0,x:-9500,ease:SteppedEase.config(19), paused: true});
+var PH1 = TweenMax.to('.character1',10,{repeat:0,x:-64500,ease:SteppedEase.config(129), paused: true});
+var PH2 = TweenMax.to('.character12',9,{repeat:-1,x:-61500,ease:SteppedEase.config(123), paused: true});
 
 // Control functions ( you can add whatever you want ) : 
 
@@ -25,44 +27,68 @@ function once(){ M2.repeat(1); };
 
 function infinity(){  M2.repeat(-1); };
 
-// function timeScale(X){ 
-//   TweenLite.to([M2,M3,M4,M5,M6,M7],1,{timeScale:X});
-//   //M1.timeScale(X); M2.timeScale(X); 
-// };
 
 const tl = gsap.timeline({
   scrollTrigger:{
-    trigger: ".animaciones",
+    trigger: ".ph1",
     start: "center center",
-    end: "500% bottom",
+    end: "300% bottom",
     scrub: true,
     pin: true,
     // markers: true,
     pinSpacing: false
   }
-}).to('.character2',1,{repeat:0,x:-24995,ease:SteppedEase.config(49)})
-  .to("#dos", {opacity: 1}).to('.uno',{ opacity: 0})
-  .to('.character4',10,{repeat:0,x:-64000,ease:SteppedEase.config(128)})
-  .to(".tres", {opacity: 1}).to('#dos',{ opacity: 0})
-  .to('.character5',8,{repeat:0,x:-51000,ease:SteppedEase.config(102)})
-  .to(".cuatro", {opacity: 1}).to('.tres',{ opacity: 0})
-  .to('.character6',7,{repeat:0,x:-60000,ease:SteppedEase.config(120)})
-  .to(".cuatro", {opacity:0});
+}).to('.character1',10,{repeat:0,x:-64500,ease:SteppedEase.config(129)}).to('.character1', {opacity: 0}).to('.pht1', {opacity: 0});
 
-  const tl2 = gsap.timeline({
-    scrollTrigger:{
-      trigger: ".animaciones",
-      start: "center center",
-      end: "500% bottom",
-      scrub: true,
-      pin: true,
-      markers: true,
-      pinSpacing: false
-    }
-  }).to(".text-one",{opacity:1}).to(".text-one",{opacity:0})
-    .to(".text-two",{opacity:1}).to(".text-two",{opacity:0})
-    .to(".text-three",{opacity:1}).to(".text-three",{opacity:0})
-    .to(".text-four",{opacity:1}).to(".text-four",{opacity:0})
+const tl2 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".ph2",
+    start: "center center",
+    end: "300% bottom",
+    scrub: true,
+    pin: true,
+    // markers: true,
+    // pinSpacing: false
+  }
+}).to('.character12',9,{repeat:0,x:-61500,ease:SteppedEase.config(123)}).to('.character12', {opacity: 0}).to('.pht2', {opacity: 0});
+// function timeScale(X){ 
+//   TweenLite.to([M2,M3,M4,M5,M6,M7],1,{timeScale:X});
+//   //M1.timeScale(X); M2.timeScale(X); 
+// };
+
+// const tl = gsap.timeline({
+//   scrollTrigger:{
+//     trigger: ".animaciones",
+//     start: "center center",
+//     end: "500% bottom",
+//     scrub: true,
+//     pin: true,
+//     // markers: true,
+//     pinSpacing: false
+//   }
+// }).to('.character2',1,{repeat:0,x:-24995,ease:SteppedEase.config(49)})
+//   .to("#dos", {opacity: 1}).to('.uno',{ opacity: 0})
+//   .to('.character4',10,{repeat:0,x:-64000,ease:SteppedEase.config(128)})
+//   .to(".tres", {opacity: 1}).to('#dos',{ opacity: 0})
+//   .to('.character5',8,{repeat:0,x:-51000,ease:SteppedEase.config(102)})
+//   .to(".cuatro", {opacity: 1}).to('.tres',{ opacity: 0})
+//   .to('.character6',7,{repeat:0,x:-60000,ease:SteppedEase.config(120)})
+//   .to(".cuatro", {opacity:0});
+
+//   // const tl2 = gsap.timeline({
+//   //   scrollTrigger:{
+//   //     trigger: ".animaciones",
+//   //     start: "center center",
+//   //     end: "500% bottom",
+//   //     scrub: true,
+//   //     pin: true,
+//   //     markers: true,
+//   //     pinSpacing: false
+//   //   }
+//   // }).to(".text-one",{opacity:1}).to(".text-one",{opacity:0})
+//   //   .to(".text-two",{opacity:1}).to(".text-two",{opacity:0})
+//   //   .to(".text-three",{opacity:1}).to(".text-three",{opacity:0})
+//   //   .to(".text-four",{opacity:1}).to(".text-four",{opacity:0})
 // const tl = gsap.timeline({
 //     scrollTrigger: {
 //       trigger: ".uno",
