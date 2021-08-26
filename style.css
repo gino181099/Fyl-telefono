@@ -1,5 +1,5 @@
 body{  
-    background-color: #333  ;
+    background-color: #000  ;
     font-family:arial;
     color:silver;
     margin: 0;
@@ -10,6 +10,28 @@ body{
     margin: 0;
     padding: 0;
 }
+.bg{
+    background: conic-gradient(from -82.18deg at 47.64% 56.16%, #00E29A 0deg, #00A3FF 90deg, #5FFFE2 180deg, #00A3FF 189.38deg, #648F98 234.38deg, #AD00FF 360deg);
+filter: blur(72px);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+.ph-bg{
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    background: conic-gradient(from -82.18deg at 47.64% 56.16%, #00E29A 0deg, #00A3FF 90deg, #5FFFE2 180deg, #00A3FF 189.38deg, #648F98 234.38deg, #AD00FF 360deg);
+    filter: blur(72px);
+    
+}
+.primergb{
+    left: 35vh;
+}
+.segundobg{
+    right: 35vh;
+}
 .ph1{
     height: 100vh;
     /* border: 1px solid blue; */
@@ -18,6 +40,7 @@ body{
     justify-content: center;
     /* padding-bottom: 200vh; */
     margin-bottom: 150vh;
+   
 }
 .ph2{
     height: 100vh;
@@ -26,6 +49,7 @@ body{
     align-items: center;
     
     justify-content: center;
+    
 }
 .ph-text{
     font-size: 24px;
@@ -34,9 +58,9 @@ body{
     max-width: 400px;
     text-align: center;
 }
-.character1, .character12{
+/* .character1, .character12{
     border: 1px solid red;
-}
+} */
 .pht1{
     position: absolute;
     right: 30vh;

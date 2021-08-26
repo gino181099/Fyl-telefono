@@ -6,10 +6,6 @@ gsap.registerPlugin("ScrollTrigger");
 // var M2 = TweenMax.to('.character2',1,{repeat:0,x:-24995,ease:SteppedEase.config(49), paused: true});
 
 // var M3 = TweenMax.to('.character3',1,{repeat:0,x:-7500,ease:SteppedEase.config(15), paused: true});
-var M4 = TweenMax.to('.character4',10,{repeat:-1,x:-64000,ease:SteppedEase.config(128), paused: true});
-var M5 = TweenMax.to('.character5',8,{repeat:0,x:-51000,ease:SteppedEase.config(102), paused: true});
-var M6 = TweenMax.to('.character6',7,{repeat:0,x:-60000,ease:SteppedEase.config(120), paused: true});
-var M7 = TweenMax.to('.character7',1,{repeat:0,x:-9500,ease:SteppedEase.config(19), paused: true});
 var PH1 = TweenMax.to('.character1',10,{repeat:0,x:-64500,ease:SteppedEase.config(129), paused: true});
 var PH2 = TweenMax.to('.character12',9,{repeat:-1,x:-61500,ease:SteppedEase.config(123), paused: true});
 
@@ -36,9 +32,10 @@ const tl = gsap.timeline({
     scrub: true,
     pin: true,
     // markers: true,
-    pinSpacing: false
+    pinSpacing: false,
+    snap: 1
   }
-}).to('.character1',10,{repeat:0,x:-64500,ease:SteppedEase.config(129)}).to('.character1', {opacity: 0}).to('.pht1', {opacity: 0});
+}).to('.bg', {scale: 0.1,opacity: 0}).to('.character1',10,{repeat:0,x:-64500,ease:SteppedEase.config(129)}).to('.character1', {opacity: 0}).to('.pht1', {opacity: 0}).to('.primergb', {opacity:0});
 
 const tl2 = gsap.timeline({
   scrollTrigger:{
@@ -47,10 +44,11 @@ const tl2 = gsap.timeline({
     end: "300% bottom",
     scrub: true,
     pin: true,
+    snap: 1
     // markers: true,
     // pinSpacing: false
   }
-}).to('.character12',9,{repeat:0,x:-61500,ease:SteppedEase.config(123)}).to('.character12', {opacity: 0}).to('.pht2', {opacity: 0});
+}).to('.character12',9,{repeat:0,x:-61500,ease:SteppedEase.config(123)}).to('.character12', {opacity: 0}).to('.pht2', {opacity: 0}).to('.segundobg', {opacity:0});
 // function timeScale(X){ 
 //   TweenLite.to([M2,M3,M4,M5,M6,M7],1,{timeScale:X});
 //   //M1.timeScale(X); M2.timeScale(X); 
