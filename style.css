@@ -28,9 +28,11 @@ filter: blur(72px);
 }
 .primergb{
     left: 35vh;
+    animation: ripple 3s infinite;
 }
 .segundobg{
     right: 35vh;
+    animation: ripple 3s infinite;
 }
 .ph1{
     height: 100vh;
@@ -100,6 +102,12 @@ filter: blur(72px);
     .pht2{
         left: 15vh;
     }
+    .primergb{
+        left: 25vh;
+    }
+    .segundobg{
+        right: 25vh;
+    }
 }
 @media (max-width: 991px){
     .primero{
@@ -113,6 +121,12 @@ filter: blur(72px);
     }
     .pht2{
         left: 7vh;
+    }
+    .primergb{
+        left: 21vh;
+    }
+    .segundobg{
+        right: 21vh;
     }
 }
 @media (max-width: 900px){
@@ -138,6 +152,16 @@ filter: blur(72px);
         transform: translateY(500%);
         margin: auto;
     }
+    .primergb{
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .segundobg{
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
 }
 @media (max-width: 500px){
     .container{
@@ -145,6 +169,12 @@ filter: blur(72px);
     }
     .ph-text{
         font-size: 18px;
+    }
+    .primergb{
+        transform: scale(0.5);
+    }
+    .segundobg{
+        transform: scale(0.5);
     }
 }
 @media (max-width: 450px){
@@ -185,5 +215,16 @@ filter: blur(72px);
 @media (max-width: 250px){
     .container{
         transform: scale(0.4) translateY(-200vh) translateX(-50vh);
+    }
+}
+@keyframes ripple{
+    0%{
+        transform: scale(0.8) ;
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.8);
     }
 }
