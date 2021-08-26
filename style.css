@@ -20,10 +20,11 @@ filter: blur(72px);
 }
 .ph-bg{
     width: 250px;
-    height: 500px;
+    height: 600px;
     position: absolute;
     background: conic-gradient(from -82.18deg at 47.64% 56.16%, #00E29A 0deg, #00A3FF 90deg, #5FFFE2 180deg, #00A3FF 189.38deg, #648F98 234.38deg, #AD00FF 360deg);
     filter: blur(72px);
+    margin-bottom: 50px;
     
 }
 .primergb{
@@ -171,10 +172,10 @@ filter: blur(72px);
         font-size: 18px;
     }
     .primergb{
-        transform: scale(0.5);
+        height: 400px;
     }
     .segundobg{
-        transform: scale(0.5);
+       height: 400px;
     }
 }
 @media (max-width: 450px){
