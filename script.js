@@ -33,7 +33,7 @@ const tl = gsap.timeline({
     pin: true,
     // markers: true,
     pinSpacing: false,
-    snap: 1
+    // snap: 1
   }
 }).to('.bg', {scale: 0.1,opacity: 0}).to('.character1',10,{repeat:0,x:-64500,ease:SteppedEase.config(129)}).to('.character1', {opacity: 0}).to('.pht1', {opacity: 0}).to('.primergb', {opacity:0});
 
@@ -44,7 +44,7 @@ const tl2 = gsap.timeline({
     end: "300% bottom",
     scrub: true,
     pin: true,
-    snap: 1
+    // snap: 1
     // markers: true,
     // pinSpacing: false
   }

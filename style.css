@@ -173,9 +173,11 @@ filter: blur(72px);
     }
     .primergb{
         height: 400px;
+        margin-bottom: 0px;
     }
     .segundobg{
        height: 400px;
+       margin-bottom: 0px;
     }
 }
 @media (max-width: 450px){
