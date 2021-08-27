@@ -17,6 +17,7 @@ filter: blur(72px);
     width: 100%;
     position: absolute;
     z-index: 1000;
+    border-radius: 8px;
 }
 .ph-bg{
     width: 250px;
@@ -24,15 +25,19 @@ filter: blur(72px);
     position: absolute;
     background: conic-gradient(from -82.18deg at 47.64% 56.16%, #00E29A 0deg, #00A3FF 90deg, #5FFFE2 180deg, #00A3FF 189.38deg, #648F98 234.38deg, #AD00FF 360deg);
     filter: blur(72px);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     
 }
 .primergb{
-    left: 35vh;
+    /* left: 35vh; */
+    left: 25%;
+    transform: translateX(-50%);
     animation: ripple 3s infinite;
+    opacity: 0;
 }
 .segundobg{
-    right: 35vh;
+    /* right: 35vh; */
+    right: 25%;
     animation: ripple 3s infinite;
 }
 .ph1{
@@ -66,31 +71,37 @@ filter: blur(72px);
 } */
 .pht1{
     position: absolute;
-    right: 30vh;
+    /* right: 30vh; */
+    right: 15%;
 }
 .pht2{
     position: absolute;
-    left: 30vh;
+    /* left: 30vh; */
+    left: 15%;
 }
 .container {
-    width: 500px;   overflow-x:hidden;
+    width: 500px;  height: 1000px; overflow:hidden;
     /* border: 1px solid green; */
-    transform: scale(0.5) translateY(-150vh);   
+    /* transform: scale(0.5) translateY(-150vh);    */
     /* margin: auto; */
     z-index: 10;
+    transform: scale(0.5) ;
     /* margin: auto; */
-    position: absolute;
+    position: relative;
+    top: 0;
+    
     
     /* background: blue; */
 }
 .primero{
-    left: 20vh;
+    /* left: 20vh; */
+    transform: translateX(-50%) scale(0.5);
 }
 .segundo{
-    right: 20vh;
+    transform: translateX(50%) scale(0.5);
 }
 
-@media (max-width: 1170px){
+/* @media (max-width: 1170px){
     .primero{
         left: 10vh;
     }
@@ -109,14 +120,9 @@ filter: blur(72px);
     .segundobg{
         right: 25vh;
     }
-}
+} */
 @media (max-width: 991px){
-    .primero{
-        left: 5vh;
-    }
-    .segundo{
-        right: 5vh;
-    }
+    
     .pht1{
         right: 7vh;
     }
@@ -132,14 +138,10 @@ filter: blur(72px);
 }
 @media (max-width: 900px){
     .primero{
-        left: 0;
-        right: 0;
-        margin: auto;
+        transform: scale(0.5);
     }
     .segundo{
-        left: 0;
-        right: 0;
-        margin: auto;
+        transform: scale(0.5);
     }
     .pht1{
         left: 0;
@@ -165,8 +167,11 @@ filter: blur(72px);
     }
 }
 @media (max-width: 500px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-5vh);
+    .primero{
+        transform: scale(0.3);
+    }
+    .segundo{
+        transform: scale(0.3);
     }
     .ph-text{
         font-size: 18px;
