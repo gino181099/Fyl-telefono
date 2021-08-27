@@ -177,54 +177,16 @@ filter: blur(72px);
         font-size: 18px;
     }
     .primergb{
-        height: 400px;
+        height: 300px;
         margin-bottom: 0px;
     }
     .segundobg{
-       height: 400px;
+       height: 300px;
        margin-bottom: 0px;
     }
 }
-@media (max-width: 450px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-10vh);
-    }
-}
-@media (max-width: 435px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-15vh);
-    }
-}
-@media (max-width: 410px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-20vh);
-    }
-}
-@media (max-width: 380px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-25vh);
-    }
-}
-@media (max-width: 350px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-35vh);
-    }
-}
-@media (max-width: 290px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-40vh);
-    }
-}
-@media (max-width: 270px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-45vh);
-    }
-}
-@media (max-width: 250px){
-    .container{
-        transform: scale(0.4) translateY(-200vh) translateX(-50vh);
-    }
-}
+
+
 @keyframes ripple{
     0%{
         transform: scale(0.8) ;
