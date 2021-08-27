@@ -4,6 +4,8 @@ body{
     color:silver;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
   }
 *{
     box-sizing: border-box;
@@ -129,12 +131,12 @@ filter: blur(72px);
     .pht2{
         left: 7vh;
     }
-    .primergb{
+    /* .primergb{
         left: 21vh;
     }
     .segundobg{
         right: 21vh;
-    }
+    } */
 }
 @media (max-width: 900px){
     .primero{
@@ -148,12 +150,14 @@ filter: blur(72px);
         right: 0;
         transform: translateY(500%);
         margin: auto;
+        width: 80%;
     }
     .pht2{
         left: 0;
         right: 0;
         transform: translateY(500%);
         margin: auto;
+        width: 80%;
     }
     .primergb{
         left: 0;

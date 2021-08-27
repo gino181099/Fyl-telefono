@@ -35,7 +35,7 @@ const tl = gsap.timeline({
     pinSpacing: false,
     // snap: 1
   }
-}).to('.bg', {scale: 0.01,opacity: 0}).to('.primergb', {opacity:1}).to('.character1',10,{repeat:0,x:-64500,ease:SteppedEase.config(129)}).to('.character1', {opacity: 0}).to('.pht1', {opacity: 0}).to('.primergb', {opacity:0});
+}).to('.bg', {scale: 0.01,opacity: 0}).to('.primergb', {opacity:1}).to('.character1',10,{repeat:0,x:-63000,ease:SteppedEase.config(126)}).to('.character1', {opacity: 0}).to('.pht1', {opacity: 0}).to('.primergb', {opacity:0});
 
 const tl2 = gsap.timeline({
   scrollTrigger:{
